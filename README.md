@@ -2,10 +2,10 @@
 It is a website personalized for tuition teachers to keep  a record of students studying under them and keep a history of fees submitted by them along with their other datas.
 Link: https://studentmgmtapp.tiiny.site/
 
+![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/20757c87-c87d-4c38-b35d-70f5a328bc22)
+![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/78ba7619-11cd-4562-bcc4-3d173057c02d)
+![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/6a6e53d8-ebfa-46cf-b269-d237a4179576)
+![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/5c3378dd-3ea3-457b-9af8-1e27ae8095b2)
+![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/be4fea09-f6bd-4b4e-91c1-bebfa8ee6ed5)
+![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/6c8a5f0a-e251-4c80-a3a5-8fa01b7fd30e)
 
-![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/4e7bc945-b95a-46ed-9ef3-42807643b744)
-![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/7108907c-7132-4ba1-bf3b-cdb29b98a264)
-![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/88b8fc29-fbd2-4e05-8fda-f8a6c0cd261b)
-![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/83e12026-9f12-437b-a735-1a1a2bf6ff93)
-![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/6003ee45-4040-466f-974b-36e1161c28ac)
-![image](https://github.com/PAAKHI03/STUDENT-MANAGEMENT-WEBSITE/assets/162838705/b450da2d-afd9-43a6-b086-4bd63e3fdfca)
