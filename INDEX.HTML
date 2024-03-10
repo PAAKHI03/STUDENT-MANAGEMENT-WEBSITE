@@ -1,0 +1,191 @@
+/*INDEX.HTML*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management App</title>
+    <style>
+       
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #FCF6F5; /* Very light pastel yellow */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+      }
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+}
+h1, h2 {
+    color: #333;
+    font-family: 'Times New Roman', serif; 
+}
+
+button {
+    background-color: #990011; /* Medium pink */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Times New Roman', serif;
+}
+
+button:hover {
+    background-color: #FF7383; /* Slightly darker pink */
+}
+
+/* Home page */
+#homePage {
+    text-align: center;
+}
+
+/* Form page */
+#addStudentPage {
+    display: none;
+}
+
+/* Display students page */
+#displayStudentsPage {
+    display: none;
+}
+
+/* Fees menu */
+#feesMenu {
+    display: none;
+}
+
+/* Fees history page */
+#feesHistoryPage {
+    display: none;
+}
+
+/* Search input */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Search result */
+.search-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Fees submission section */
+#addFeesDateSection {
+    display: none;
+}
+
+/* Fees history result */
+.fees-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+
+<div id="homePage" class="container">
+    <h1><I>WELCOME TO STUDENT MANAGEMENT APP</I></h1>
+  
+    <h1><I>&hearts; Hi ABHINANDITA! &hearts;</I></h1><br><br><br>
+
+    <button onclick="navigate('addStudentPage')">ADD STUDENT</button><br>
+    <button onclick="navigate('displayStudentsPage')">DISPLAY STUDENTS</button><br>
+    <button onclick="navigate('feesMenu')">FEES MENU</button><br>
+    <button onclick="navigate('deleteStudentPage')">DELETE STUDENTS</button>
+</div>
+
+<div id="addStudentPage" style="display: none;" class="container">
+    <h2>ADD NEW STUDENT</h2>
+    <form onsubmit="event.preventDefault(); addStudent();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        <label for="class">Class:</label>
+        <select id="class">
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>
+        <label for="school">School:</label>
+        <input type="text" id="school" required><br><br>
+        <label for="fees">Fees:</label>
+        <input type="text" id="fees" required><br><br>
+        <label for="subjects">Subjects:</label>
+        <select id="subjects">
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="Maths & Science">Maths &amp; Science</option>
+        </select><br><br>
+        <label for="joiningDate">Joining Date:</label>
+        <input type="date" id="joiningDate" required><br><br>
+        <button type="submit">Add Student</button>
+    </form>
+    <button onclick="navigate('homePage')">Back to Home</button>
+</div>
+
+<div id="displayStudentsPage" style="display: none;" class="container">
+    <h2>ENROLLED STUDENT LIST</h2>
+    <div id="displayResult"></div>  
+    <button onclick="navigate('homePage')">Back to Home</button>
+</div>
+
+<div id="feesMenu" style="display: none;" class="container">
+    <h2>FEES MENU</h2>
+    <input type="text" id="searchInput" placeholder="Search Student">
+    <button onclick="searchStudentInFees()">Search</button>
+    <div id="searchResult" class="container"></div>
+    <div id="addFeesDateSection" style="display: none;">
+        <label for="feesDate">Fees Submission Date:</label>
+        <input type="date" id="feesDate" required><br>
+        <button onclick="addFeesSubmissionDateToStudent()">Add Fees Submission Date</button>
+        <button onclick="viewFeesSubmissionHistory()">View History</button>
+        
+    </div>
+    <div id="feesResult" class="container"></div>
+    <button onclick="navigate('homePage')">Back to Home</button>
+    
+</div>
+
+<div id="feesHistoryPage" style="display: none;" class="container">
+    <h2>Fees Submission History</h2>
+    <div id="feesHistoryResult"></div>
+    <button onclick="navigate('homePage')">Back to Home</button>
+</div>
+
+<div id="deleteStudentPage" style="display: none;" class="container">
+    <h2>DELETE STUDENT</h2>
+    <div id="deleteResult"></div>
+    <button onclick="navigate('homePage')">Back to Home</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
